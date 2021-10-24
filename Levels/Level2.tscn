@@ -1,0 +1,89 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Checkpoint.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Levels/Level.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Coin.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Flag.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Enemies/Seeker.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Enemies/DeathCircle.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Enemies/Turret.tscn" type="PackedScene" id=7]
+
+[node name="Level" instance=ExtResource( 2 )]
+
+[node name="Platforms" parent="." index="1"]
+tile_data = PoolIntArray( -196591, 0, 0, -196590, 0, 0, -196589, 0, 0, -196588, 0, 0, -196587, 0, 0, -196586, 0, 0, -196585, 0, 0, -196584, 0, 0, -196583, 0, 0, -196582, 0, 0, -196581, 0, 0, -196580, 0, 0, -196579, 0, 0, -196578, 0, 0, -196577, 0, 0, -196576, 0, 0, -196575, 0, 0, -196574, 0, 0, -196573, 0, 0, -196572, 0, 0, -196571, 0, 0, -196570, 0, 0, -131055, 0, 0, -131034, 0, 0, -65519, 0, 0, -65498, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 38, 0, 0, 39, 0, 0, 40, 0, 0, 41, 0, 0, 42, 0, 0, 43, 0, 0, 44, 0, 0, 45, 0, 0, 46, 0, 0, 47, 0, 0, 48, 0, 0, 49, 0, 0, 50, 0, 0, 51, 0, 0, 52, 0, 0, 53, 0, 0, 54, 0, 0, 55, 0, 0, 56, 0, 0, 57, 0, 0, 58, 0, 0, 59, 0, 0, 60, 0, 0, 61, 0, 0, 62, 0, 0, 63, 0, 0, 64, 0, 0, 65, 0, 0, 66, 0, 0, 67, 0, 0, 65536, 0, 0, 65574, 0, 0, 131072, 0, 0, 131110, 0, 0, 131113, 0, 0, 196608, 0, 0, 196646, 0, 0, 196649, 0, 0, 196650, 0, 0, 262144, 0, 0, 262160, 0, 0, 262161, 0, 0, 327680, 0, 0, 327697, 0, 0, 393216, 0, 0, 393229, 0, 0, 393233, 0, 0, 393246, 0, 0, 393247, 0, 0, 393248, 0, 0, 393254, 0, 0, 393255, 0, 0, 393256, 0, 0, 393257, 0, 0, 393258, 0, 0, 393259, 0, 0, 393260, 0, 0, 393261, 0, 0, 393262, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, 0, 0, 458763, 0, 0, 458764, 0, 0, 458765, 0, 0, 458766, 0, 0, 458767, 0, 0, 458768, 0, 0, 458769, 0, 0, 458773, 0, 0, 458774, 0, 0, 458775, 0, 0, 458776, 0, 0, 589874, 0, 0, 589875, 0, 0, 589876, 0, 0, 589877, 0, 0, 589878, 0, 0, 589885, 0, 0, 589886, 0, 0, 852025, 0, 0, 852026, 0, 0, 852027, 0, 0 )
+
+[node name="Coin" parent="Coins" index="0" instance=ExtResource( 3 )]
+position = Vector2( 409.321, 159.551 )
+
+[node name="Coin2" parent="Coins" index="1" instance=ExtResource( 3 )]
+position = Vector2( 1551.03, 206.699 )
+index = 1
+
+[node name="Seeker" parent="Enemies" index="0" instance=ExtResource( 5 )]
+position = Vector2( 320.092, 87.8775 )
+
+[node name="Seeker4" parent="Enemies" index="1" instance=ExtResource( 5 )]
+position = Vector2( 1442.09, 234.878 )
+
+[node name="Seeker2" parent="Enemies" index="2" instance=ExtResource( 5 )]
+position = Vector2( 574.422, 52.2142 )
+
+[node name="Seeker3" parent="Enemies" index="3" instance=ExtResource( 5 )]
+position = Vector2( 795.534, 33 )
+
+[node name="DeathCircle" parent="Enemies" index="4" instance=ExtResource( 6 )]
+position = Vector2( 488, 214 )
+scale = Vector2( 5, 5 )
+
+[node name="DeathCircle2" parent="Enemies" index="5" instance=ExtResource( 6 )]
+position = Vector2( 697, 226 )
+scale = Vector2( 7, 7 )
+
+[node name="DeathCircle3" parent="Enemies" index="6" instance=ExtResource( 6 )]
+position = Vector2( 888, 217 )
+scale = Vector2( 7, 7 )
+
+[node name="DeathCircle4" parent="Enemies" index="7" instance=ExtResource( 6 )]
+position = Vector2( 1181, 248 )
+scale = Vector2( 7, 7 )
+
+[node name="DeathCircle5" parent="Enemies" index="8" instance=ExtResource( 6 )]
+position = Vector2( 1356, 322 )
+scale = Vector2( 7, 7 )
+
+[node name="DeathCircle6" parent="Enemies" index="9" instance=ExtResource( 6 )]
+position = Vector2( 1569, 322 )
+scale = Vector2( 7, 7 )
+
+[node name="DeathCircle7" parent="Enemies" index="10" instance=ExtResource( 6 )]
+position = Vector2( 1649, 233 )
+scale = Vector2( 7, 7 )
+
+[node name="DeathCircle8" parent="Enemies" index="11" instance=ExtResource( 6 )]
+position = Vector2( 1653, 102 )
+scale = Vector2( 7, 7 )
+
+[node name="Turret" parent="Enemies" index="12" instance=ExtResource( 7 )]
+position = Vector2( 1163, 36 )
+rotation = 3.14159
+fireTime = 1.5
+
+[node name="Turret2" parent="Enemies" index="13" instance=ExtResource( 7 )]
+position = Vector2( 1311, 35 )
+rotation = 3.14159
+fireTime = 1.5
+
+[node name="Turret3" parent="Enemies" index="14" instance=ExtResource( 7 )]
+position = Vector2( 1490, 33 )
+rotation = 3.14159
+fireTime = 1.5
+
+[node name="Checkpoint2" parent="Checkpoints" index="0" instance=ExtResource( 1 )]
+position = Vector2( 962.356, 135.352 )
+
+[node name="StartingPosition" parent="PlayerContainer" index="0"]
+position = Vector2( 52, 158 )
+
+[node name="Flag" parent="." index="7" instance=ExtResource( 4 )]
+position = Vector2( 1446.45, 285.969 )

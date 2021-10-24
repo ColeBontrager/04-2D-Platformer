@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://End.gd" type="Script" id=1]
+[ext_resource path="res://NewGame.gd" type="Script" id=2]
+
+[node name="End" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.36743
+margin_right = 3.36743
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0.0901961, 0.0431373, 0.67451, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 462.0
+margin_top = 100.0
+margin_right = 562.0
+margin_bottom = 140.0
+text = "Back to Title"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuitGame" type="Button" parent="."]
+margin_left = 462.0
+margin_top = 200.0
+margin_right = 562.0
+margin_bottom = 240.0
+text = "Quit Game"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="QuitGame" to="." method="_on_QuitGame_pressed"]
+[connection signal="pressed" from="QuitGame" to="QuitGame" method="_on_Button_pressed"]
